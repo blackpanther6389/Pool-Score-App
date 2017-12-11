@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Test Page</title>
+		<meta charset="utf-8" />
+		<!-- CSS goes here -->
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div id="loginPage" class="portal hidden">
+			<button type="button" id="login">Login!</button>
+		</div>
+
+		<div id="dashboardPage" class="dashboard hidden">
+			<h1>User Dashboard</h1>
+			<p>8 Ball</p>
+			<p>9 Ball</p>
+			<p>Cut Throat</p>
+			<button type="button" id="logout">Logout!</button>
+		</div>
+
+		<!-- Load scripts at the bottom of the page -->
+
+		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+		<script>
+	  		// Initialize Firebase
+		  	var config = {
+		    	apiKey: "AIzaSyA_4ydR2Alig0xogw1999Yj_WZD5kcKL6A",
+		    	authDomain: "pool-scoring-app.firebaseapp.com",
+		    	databaseURL: "https://pool-scoring-app.firebaseio.com",
+		    	projectId: "pool-scoring-app",
+		    	storageBucket: "pool-scoring-app.appspot.com",
+		    	messagingSenderId: "740511548910"
+		  	};
+		  	firebase.initializeApp(config);
+  		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

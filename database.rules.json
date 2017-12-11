@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "gmailUsers": {
+            "$uid": {
+                ".read": "auth.token.email_verified == true &&
+                          auth.token.email.matches(/.*@onefire.com$/)",
+                ".write": "auth.token.email == rashad.hill@onefire.com"
+
+        }
+    }
+  }
+}
